@@ -5,7 +5,8 @@
       "item": "minecraft:flint_and_steel"
     },
     "title":"危険行為：火打石と打ち金の使用",
-    "description":"火打石と打ち金を使用して火を付けました"
+    "description":"火打石と打ち金を使用して火を付けました",
+    "hidden": false
   },
   "criteria": {
     "use_flint_and_steel": {

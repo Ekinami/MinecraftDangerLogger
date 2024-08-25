@@ -1,0 +1,27 @@
+{
+    "parent": "haura_danger_logger:root",
+    "display": {
+      "icon": {
+        "item": "minecraft:tnt"
+      },
+      "title":"内部処理：TNT検知の初期化",
+      "description":"TNT検知の初期化",
+      "show_toast": false,
+      "announce_to_chat": false,
+      "hidden": true
+    },
+    "criteria": {
+        "from_inventory": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+          }
+      }
+    },
+    "requirements": [
+      ["from_inventory"]
+    ],
+    "rewards": {
+      "function": "haura_danger_logger:reset_use_tnt"
+    }
+  }
+      

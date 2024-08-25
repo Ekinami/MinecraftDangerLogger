@@ -4,7 +4,10 @@
       "item": "minecraft:tnt"
     },
     "title":"危険行為：TNTの所持",
-    "description":"TNTを所持しました"
+    "description":"TNTを所持しました",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
   },
   "criteria": {
       "tnt_from_inventory": {

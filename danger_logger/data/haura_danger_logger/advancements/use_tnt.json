@@ -1,0 +1,31 @@
+{
+  "parent": "haura_danger_logger:root",
+  "display": {
+    "icon": {
+      "item": "minecraft:tnt"
+    },
+    "title":"危険行為：TNTの使用",
+    "description":"TNTを設置しました"
+  },
+  "criteria": {
+      "tnt_from_inventory": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "minecraft:tnt"
+              ]
+            }
+          ]
+        }
+    }
+  },
+  "requirements": [
+    ["tnt_from_inventory"]
+  ],
+  "rewards": {
+    "function": "haura_danger_logger:tnt_achievement_reached"
+  }
+}
+    

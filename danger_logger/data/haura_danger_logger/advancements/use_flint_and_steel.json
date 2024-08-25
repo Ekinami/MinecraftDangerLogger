@@ -1,0 +1,35 @@
+{
+  "parent": "haura_danger_logger:root",
+  "display": {
+    "icon": {
+      "item": "minecraft:flint_and_steel"
+    },
+    "title":"危険行為：火打石と打ち金の使用",
+    "description":"火打石と打ち金を使用して火を付けました"
+  },
+  "criteria": {
+    "use_flint_and_steel": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "player": [],
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:flint_and_steel"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    ["use_flint_and_steel"]
+  ],
+  "rewards": {
+    "function": "haura_danger_logger:flint_and_steel_achievement_reached"
+  }
+}
+    

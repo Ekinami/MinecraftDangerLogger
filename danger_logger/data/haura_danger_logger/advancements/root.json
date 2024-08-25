@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:tnt"
+    },
+    "title":"危険行為：TNTの所持",
+    "description":"TNTを所持しました"
+  },
+  "criteria": {
+      "tnt_from_inventory": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "minecraft:tnt"
+              ]
+            }
+          ]
+        }
+    }
+  }
+}
+    

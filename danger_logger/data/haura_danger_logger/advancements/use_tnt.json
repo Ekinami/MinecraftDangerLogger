@@ -4,25 +4,19 @@
     "icon": {
       "item": "minecraft:tnt"
     },
-    "title":"危険行為：TNTの使用",
-    "description":"TNTを設置しました"
+    "title":"TNT着火検知",
+    "description":"ワールド内にて起爆寸前のTNTを検知",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
   },
   "criteria": {
-      "tnt_from_inventory": {
-        "trigger": "minecraft:inventory_changed",
-        "conditions": {
-          "items": [
-            {
-              "items": [
-                "minecraft:tnt"
-              ]
-            }
-          ]
-        }
+    "ex_tnt": {
+      "trigger": "minecraft:location"
     }
   },
   "requirements": [
-    ["tnt_from_inventory"]
+    ["ex_tnt"]
   ],
   "rewards": {
     "function": "haura_danger_logger:tnt_achievement_reached"

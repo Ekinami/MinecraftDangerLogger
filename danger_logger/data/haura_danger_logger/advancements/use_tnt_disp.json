@@ -1,0 +1,25 @@
+{
+  "parent": "haura_danger_logger:root",
+  "display": {
+    "icon": {
+      "item": "minecraft:tnt"
+    },
+    "title":"危険：TNTの爆発",
+    "description":"ワールド内にて起爆寸前のTNTを検知しました",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ex_tnt_disp": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    ["ex_tnt_disp"]
+  ],
+  "rewards": {
+    "function": "haura_danger_logger:reset_use_tnt_disp"
+  }
+}
+    
